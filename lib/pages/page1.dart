@@ -41,6 +41,9 @@ class _Page1State extends State<Page1> {
                     return Page2();
                   }));
                 }else{
+                  setState(() {
+                    wrong ++;
+                  });
                   showDialog(
                     context: context,
                     builder: (_) {
@@ -57,7 +60,8 @@ class _Page1State extends State<Page1> {
                   );
                 };
               }, child: Text("確認")),
-        ],
+              Text("間違い：$wrong回")
+            ],
           ),
       ),
       ),
