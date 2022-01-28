@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: TextField(
+                obscureText: true,
               decoration: InputDecoration(
                   hintText: "パスワードを作成してください"
               ),

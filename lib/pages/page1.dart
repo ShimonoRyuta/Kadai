@@ -23,6 +23,7 @@ class _Page1State extends State<Page1> {
             children: [
               Flexible(
               child: TextField(
+                obscureText: true,
                 decoration: InputDecoration(
                     hintText: "パスワードを入力してください"
                 ),
@@ -46,7 +47,7 @@ class _Page1State extends State<Page1> {
                       return AlertDialog(
                         title: Text("パスワードが違います"),
                         actions: <Widget>[
-                          FlatButton(
+                          TextButton(
                             child: Text("OK"),
                             onPressed: () => Navigator.pop(context),
                           ),
